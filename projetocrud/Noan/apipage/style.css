@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url(paisagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #555555;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: #555555;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+.btnlogin{
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #555555;
+    transition: all .55s ease;
+}
+#menu-icon{
+color: #555555;
+font-size: 30px;
+z-index: 10001;
+cursor: pointer;
+display: none;
+}
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: rgb(158, 158, 158);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+}
+.navlist.open{
+    right: 0;
+}
+main.cards{
+    display: flex;
+    padding: 30px;
+}
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #555555;
+    padding: 1ren 1.5ren;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 32px;
+}
+main.cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+main.cards section.card img{
+width: 100%;
+}
