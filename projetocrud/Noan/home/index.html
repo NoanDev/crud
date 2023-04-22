@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Permanent+Marker&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+   <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Viaje com Propósito: Descubra a si mesmo e o mundo ao seu redor.">
+    <title>Estrada Nativa</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo">Estrada Nativa</a>
+
+        <ul class="nav_items">
+          <li class="nav_item">
+            <a href="#" class="nav_link">Home</a>
+            <a href="#" class="nav_link">Dicas</a>
+            <a href="#" class="nav_link">Cotação</a>
+            <a href="#" class="nav_link">SobreNós</a>
+          </li>
+        </ul>
+        <button class="button" id="form-open">Login</button>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <div class="form login_form">
+          <form action="#">
+            <h2>Login</h2>
+            <div class="input_box">
+              <input type="email" placeholder="Seu Email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Sua Senha" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Lembre de Mim</label>
+              </span>
+              <a href="#" class="forgot_pw">Esqueceu sua Senha?</a>
+            </div>
+            <button class="button">Entrar</button>
+            <div class="login_signup">Não tem uma Conta? <a href="#" id="signup">Cadastre-Se</a></div>
+          </form>
+        </div>
+        <div class="form signup_form">
+          <form action="#">
+            <h2>Cadastro</h2>
+            <div class="input_box">
+              <input type="email" placeholder="Seu Email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Crie sua Senha" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Confirme a Senha" required/>
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <button class="button">Inscreva-se</button>
+            <div class="login_signup">Já tem uma Conta? <a href="#" id="login">Login</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="silhueta">
+      <div class="silhueta-text">
+          <h5>Olá</h5>
+          <h4>Bem Vindo(a)</h4>
+          <h1>Liberte-se</h1>
+          <p>Você está aqui por uma razão, você pensa 
+          fora da caixinha. Estamos juntos nessa jornada de reflexão e autoconhecimento!<br> Temos dicas de finanças básicas mas que vão te ajudar com essa sua nova fase, assista um vídeo e sinta-se mais a vontade!</p>
+          <a href="#" class="ctaa"><i class="ri-play-fill"></i>Assistir Vídeo</a>
+      </div>
+      <div class="silhuetaimg">
+          <img src="silhueta.png" alt="Silhueta">
+      </div>
+  </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
